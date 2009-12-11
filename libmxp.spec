@@ -1,9 +1,8 @@
 Summary: Library that parses MXP stream
 Name: libmxp
-Version: 0.2.2
-Release: %mkrel 2
+Version: 0.2.4
+Release: %mkrel 1
 Source0: http://www.kmuddy.com/libmxp/files/%name-%version.tar.gz
-Patch0: libmxp-0.2.2-gcc43.patch
 License: LGPLv2+
 Group: Development/C++
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -32,15 +31,14 @@ This package contains files need to build applications using libmxp.
 
 %prep
 %setup -q -n %name-%version
-%patch0 -p0
 
 %build
-%configure2_5x
+%cmake
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall_std
+%makeinstall_std -C build
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,6 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc ChangeLog README* NEWS
 %_libdir/*.so
-%_libdir/*.a
-%_libdir/*.la
 %_includedir/*
