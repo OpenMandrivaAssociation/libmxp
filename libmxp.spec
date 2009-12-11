@@ -5,6 +5,7 @@ Release: %mkrel 1
 Source0: http://www.kmuddy.com/libmxp/files/%name-%version.tar.gz
 License: LGPLv2+
 Group: Development/C++
+BuildRequires: cmake
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Url: http://www.kmuddy.com
 
