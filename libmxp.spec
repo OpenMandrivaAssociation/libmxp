@@ -53,3 +53,24 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README* NEWS
 %_libdir/*.so
 %_includedir/*
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.2.4-2mdv2011.0
++ Revision: 609760
+- rebuild
+
+* Fri Dec 11 2009 Funda Wang <fwang@mandriva.org> 0.2.4-1mdv2010.1
++ Revision: 476281
+- iBR cmake
+- new version 0.2.4
+
+* Sun Sep 13 2009 Thierry Vignaud <tv@mandriva.org> 0.2.2-2mdv2010.0
++ Revision: 438714
+- rebuild
+
+* Sun Dec 07 2008 Funda Wang <fwang@mandriva.org> 0.2.2-1mdv2009.1
++ Revision: 311531
+- import libmxp
+
+
