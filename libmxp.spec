@@ -1,7 +1,7 @@
 Summary: Library that parses MXP stream
 Name: libmxp
 Version: 0.2.4
-Release: %mkrel 2
+Release: 3
 Source0: http://www.kmuddy.com/libmxp/files/%name-%version.tar.gz
 License: LGPLv2+
 Group: Development/C++
