@@ -7,7 +7,7 @@ License: LGPLv2+
 Group: Development/C++
 BuildRequires: cmake
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Url: http://www.kmuddy.com
+Url: https://www.kmuddy.com
 
 %description
 Library that parses MXP stream.
